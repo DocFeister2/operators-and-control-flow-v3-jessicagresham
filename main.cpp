@@ -83,9 +83,9 @@ int main() {
   }
 
   // EDIT: Asks user if they want to accept the sale
-  if (!(accept_sale == "y" || accept_sale += "n")) {
+  if (!(accept_sale == "y" || accept_sale == "n")) {
     cout << "Invalid sale response entered! Please enter 'y' or 'n'." << endl;
-    return; // abort
+    return 1; // abort
   }
 
   // EDIT: Adds sale when accepted
@@ -101,7 +101,7 @@ int main() {
     item_cost = total_cost / quantity;
   }
 
-  if (product_type == "banana") && (unit_type == "bunch")) {
+  if ((product_type == "banana") && (unit_type == "bunch")) {
     total_cost = quantity * price_bunch_bananas;  //...
     //...
     // EDIT: Multiplies the number of bunches by the price of each bunch.
