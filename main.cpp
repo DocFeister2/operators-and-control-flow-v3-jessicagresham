@@ -97,7 +97,10 @@ int main() {
   if ((product_type == "banana") && (unit_type == "single")) {
     total_cost = quantity * (price_banana / 100.); // total cost in dollars
     //...
+    // EDIT: Divides the total cost by the bananad to get cost per banana
+    item_cost = total_cost / quantity;
   }
+  
   if (product_type == "banana") && (unit_type == "bunch")) {
     total_cost = quantity *   //...
     //...
