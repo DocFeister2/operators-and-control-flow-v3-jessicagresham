@@ -82,6 +82,12 @@ int main() {
     return 1; // abort
   }
 
+  // EDIT: Asks user if they want to accept the sale
+  if (!(accept_sale == "y" || accept_sale += "n")) {
+    cout << "Invalid sale response entered! Please enter 'y' or 'n'." << endl;
+    return; // abort
+  }
+
   // TODO: COMPUTE THE COST OF THIS PURCHASE
   if ((product_type == "banana") && (unit_type == "single")) {
     total_cost = quantity * (price_banana / 100.); // total cost in dollars
