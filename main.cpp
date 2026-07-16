@@ -63,12 +63,19 @@ int main() {
     return 1; // abort
   }
   //...
-  //EDIT: Checks that the user entered apple, banana, or watermelon.
+  // EDIT: Checks that the user entered apple, banana, or watermelon.
   if (!(product_type == "banana" || product_type == "apple" || product_type == "watermelon")) {
     cout << "Invalid product entered! Product must be 'banana', 'apple', or 'watermelon'." << endl;
     return 1; //abort
   }
 
+  // EDIT: Checks that apples are purchased as either a single or bag.
+  if ((product_type == "apple") &&
+      !(unit_type == "single" || unit_type == "bag")) {
+    cout << "Invalid unit type entered! For apples, the unit type must be 'single' or 'bag'." <<endl;
+    return 1; //abort
+  }
+  
   // TODO: COMPUTE THE COST OF THIS PURCHASE
   if ((product_type == "banana") && (unit_type == "single")) {
     total_cost = quantity * (price_banana / 100.); // total cost in dollars
