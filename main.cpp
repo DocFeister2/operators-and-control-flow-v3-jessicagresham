@@ -124,10 +124,17 @@ int main() {
   item_cost = total_cost / (quantity * 8);
  }
 
+ // EDIT: Calculate total and individual cost for watermelon.
+ if ((product_type == "watermelon") && (unit_type == "single")) {
+  total_cost = quantity * (price_watermelon / 100.);
+  item_cost = total_cost / quantity;
+ }
 
 
   // TODO: APPLY THE OPTIONAL DISCOUNT TO FINAL TOTAL COST
   //...
+  // EDIT: Apply the sale
+  if 
 
       
   // DO NOT EDIT BELOW THIS LINE!
