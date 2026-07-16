@@ -63,6 +63,11 @@ int main() {
     return 1; // abort
   }
   //...
+  //EDIT: Checks that the user entered apple, banana, or watermelon.
+  if (!(product_type == "banana" || product_type == "apple" || product_type == "watermelon")) {
+    cout << "Invalid product entered! Product must be 'banana', 'apple', or 'watermelon'." << endl;
+    return 1; //abort
+  }
 
   // TODO: COMPUTE THE COST OF THIS PURCHASE
   if ((product_type == "banana") && (unit_type == "single")) {
