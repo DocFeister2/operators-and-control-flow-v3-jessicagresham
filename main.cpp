@@ -133,9 +133,13 @@ int main() {
 
   // TODO: APPLY THE OPTIONAL DISCOUNT TO FINAL TOTAL COST
   //...
-  // EDIT: Apply the sale
-  if 
+  // EDIT: Apply the sale.
+  if (accept_sale == "y") {
+    total_cost = total_cost * 0.90;
 
+    // EDIT: Update the cost per fruit after discount.
+    item_cost = item_cost * 0.90;
+  }
       
   // DO NOT EDIT BELOW THIS LINE!
 
