@@ -88,6 +88,11 @@ int main() {
     return; // abort
   }
 
+  // EDIT: Adds sale when accepted
+  if (accept_sale == "y") {
+    quantity++;
+  }
+
   // TODO: COMPUTE THE COST OF THIS PURCHASE
   if ((product_type == "banana") && (unit_type == "single")) {
     total_cost = quantity * (price_banana / 100.); // total cost in dollars
