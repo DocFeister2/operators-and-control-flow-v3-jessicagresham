@@ -97,16 +97,33 @@ int main() {
   if ((product_type == "banana") && (unit_type == "single")) {
     total_cost = quantity * (price_banana / 100.); // total cost in dollars
     //...
-    // EDIT: Divides the total cost by the bananad to get cost per banana
+    // EDIT: Divides the total cost by the bananad to get cost per banana.
     item_cost = total_cost / quantity;
   }
-  
+
   if (product_type == "banana") && (unit_type == "bunch")) {
-    total_cost = quantity *   //...
+    total_cost = quantity * price_bunch_bananas;  //...
     //...
+    // EDIT: Multiplies the number of bunches by the price of each bunch.
+    item_cost = total_cost / (quantity * 7);
   }
+
   //...
-  //...
+  // EDIT: Calculates the total cost and individual cost for single apples.
+  if ((product_type == "apple") && (unit_type == "single")) {
+    total_cost = quantity * (price_apple / 100.);
+    item_cost = total_cost/ quantity;
+  }
+
+ //...
+ // EDIT: Calculate the total cost and cost per apple for bags of apples.
+ if ((product_type == "apple") && (unit_type == "bag")) {
+  total_cost = quantity * price_bag_apples;
+
+  // EDIT: Each bag has 8 apples so it finds the cost per apple.
+  item_cost = total_cost / (quantity * 8);
+ }
+
 
 
   // TODO: APPLY THE OPTIONAL DISCOUNT TO FINAL TOTAL COST
